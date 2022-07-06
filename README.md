@@ -15,7 +15,7 @@ Decode a secret message from the .ppm file using bit field functions from task A
 
 ## Project 2
 
-evaulation: ?/15
+evaulation: 13.5/15
 
 ### TASK A
 

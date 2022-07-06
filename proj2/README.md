@@ -2,11 +2,74 @@
 
 evaulation: 13.5/15
 
-## How to run
-1. compile with command make
-2. make prepared some testing file (ideally .txt)
-3. run with ./wordcount < test.txt or ./wordcount-dynamic < test.txt
-4. clean with commands, based on your operating system: *make win-clear* and *make win-delete* / *make clear* and *make delete*
+## Build
+```bash
+make
+```
+This command should build both A and B tasks
 
-## TODO
-readme, usage, zadani
+# Task A
+
+Write program that print last 10 (or any user inputed number) lines from given file.
+
+## Run
+```bash
+tail {file}
+
+tail -n [number of lines] [file]
+
+tail -n [number of lines] < [file]
+```
+
+# Task B
+
+Rewrite C++ program (wordcount.cc) to C (wordcount.c) using hash table functions as a substitute for unordered_map in C++.
+
+## Windows run
+
+### Static library
+```bash
+wordcount.exe < [file]
+```
+
+### Dynamic library
+```bash
+wordcount-dynamic.exe < [file]
+```
+
+## Linux run
+
+### Static library
+```bash
+./wordcount < [file]
+```
+
+### Dynamic library
+```bash
+./wordcount-dynamic < [file]
+```
+
+# Utilities
+
+## Cleaning on Windows
+```bash
+make win-clear
+```
+deletes all .o files
+
+```bash
+make win-delete
+```
+deletes all compiled files, useful for testing
+
+## Cleaning on Linux
+```bash
+make clear
+```
+deletes all .o files
+
+```bash
+make delete
+```
+deletes all compiled files, useful for testing
+
